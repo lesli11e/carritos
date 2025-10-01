@@ -1,0 +1,38 @@
+body {
+  background: linear-gradient(to right, #000428, #004e92);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.mensaje h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.mensaje p {
+  font-size: 1.2rem;
+}
+
+.ramo {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  animation: girar 5s infinite linear;
+}
+
+.coche {
+  font-size: 3rem;
+  transition: transform 0.3s;
+}
+
+.coche:hover {
+  transform: scale(1.5);
+}
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
